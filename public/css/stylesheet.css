@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap');
+
+
+
+body{
+    font-family: 'Nunito', sans-serif;
+    
+}
+#navbarTop{
+    position: sticky;
+}
+.panel1{
+    background-image:url('img/viktoriia-filipchenko-PDv80gJThpE-unsplash.jpg');
+}
+
+.panel2{
+    background-image: url('img/tony-litvyak-QmYGkWtzrRo-unsplash.jpg');
+}
+
+.panel3{
+    background-image: url('img/brett-li-OKnHPvpwGQM-unsplash.jpg');
+}
+
+.panel4{
+    background-image: url('img/brice-cooper-4JgM06Sw-BI-unsplash.jpg');
+}
+
+.panel5{
+    background-image: url('img/foyez-uddin-syed-4N8AuV6b-Mg-unsplash.jpg');
+}
+
+
+.container1{
+    display: flex;
+    width: 90vw;
+    height: 10%;
+    box-sizing: border-box;
+    margin-top: 70px;
+}
+.panel{
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel h3{
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+.panel.active{
+    flex: 5;
+}
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media(max-width:480px){
+    .container1{
+        width: 100vw;
+    }
+    .panel:nth--of-type(4),.panel:nth--of-type(5){
+        display: none;
+    }
+}
+
+.container2{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-left: 5px;
+
+}
+.formcontainer{
+    display: flex;
+    width: 100vw;
+    height: 60vh;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    /* border: 2px solid black; */
+}

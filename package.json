@@ -1,0 +1,32 @@
+{
+  "name": "betwithchim",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build-css": "npx tailwindcss-cli@latest build css/tailwind.css -o dist/css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "bcrypt": "^5.1.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.6",
+    "daisyui": "^2.47.0",
+    "ejs": "^3.1.8",
+    "ejs-mate": "^4.0.0",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "joi": "^17.7.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.8.0",
+    "mongoose-unique-validator": "^3.1.0",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^7.1.2",
+    "serve-favicon": "^2.5.0",
+    "tailwindcss": "^3.2.4"
+  }
+}

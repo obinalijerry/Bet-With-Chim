@@ -1,0 +1,1 @@
+This is a website project for lovers of sports bets and predictions.

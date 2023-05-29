@@ -1,0 +1,116 @@
+<div class="bg-gray-800 shadow-md">
+  <header
+    class="container mx-auto max-w-6xl flex flex-wrap items-center p-1 justify-between"
+  >
+    <div
+      class="flex items-center text-sec hover:text-pri cursor-pointer transition"
+    >
+      <span class="font-semibold text-3xl sm:px-2 md:px-0 lg:px-0 text-white"
+        >BetWithChim</span
+      >
+    </div>
+    <div class="md:hidden block">
+      <button
+        id="menu-open"
+        class="px-3 py-1 rounded bg-sec text-white transition"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
+        </svg>
+      </button>
+      <button
+        id="menu-close"
+        class="hidden px-3 py-1 rounded bg-sec  text-white transition"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          ></path>
+        </svg>
+      </button>
+    </div>
+    <nav
+      id="menu-items"
+      class="hidden md:flex md:items-center py-1 text-white font-title w-full md:w-auto"
+    >
+      <ul class="text-lg">
+        <li class="my-3 md:my-0 block md:inline-block items-center mr-4">
+          <a href="/betwithchim" class="text-pri hover:text-sec transition"
+            >Home</a
+          >
+        </li>
+        <li class="mb-3 md:mb-0 block md:inline-block items-center mr-4">
+          <a href="/comingsoon" class="text-pri hover:text-sec transition"
+            >Value Tips</a
+          >
+        </li>
+        <li class="mb-3 md:mb-0 block md:inline-block items-center mr-4">
+          <a
+            href="/betwithchim/betoftheday"
+            class="text-pri hover:text-sec transition"
+            >Bet of the day</a
+          >
+        </li>
+        <li class="mb-3 md:mb-0 block md:inline-block items-center mr-4">
+          <a href="/comingsoon" class="text-pri hover:text-sec transition">Contact Us</a>
+        </li>
+        <% if(!currentUser){%>
+        <li
+          class="block md:inline-block items-center sm:mb-2 lg:mb-0 px-4 hover:underline"
+        >
+          <a href="/betwithchim/signup"
+            ><button
+              class="border px-1.5 py-1 mx-2 sm:my-2 rounded-md bg-blue-500 hover:bg-blue-400"
+            >
+              Sign Up
+            </button></a
+          >
+        </li>
+        <li
+          class="block md:inline-block items-center px-4 sm:mb-2 lg:mb-0 hover:underline"
+        >
+          <a href="/betwithchim/login"
+            ><button
+              class="border px-3 py-1 mx-2 rounded-md bg-blue-500 hover:bg-blue-400"
+            >
+              Log In
+            </button></a
+          >
+        </li>
+        <% } else{ %>
+        <li
+          class="block md:inline-block sm:mt-3 items-center px-4 hover:underline"
+        >
+          <a href="/betwithchim/logout"
+            ><button
+              class="border flex px-3 py-1 rounded-md inline bg-blue-500 hover:bg-blue-400"
+            >
+              <span class="text-md">Logout</span>
+            </button></a
+          >
+        </li>
+        <% } %>
+      </ul>
+    </nav>
+  </header>
+</div>

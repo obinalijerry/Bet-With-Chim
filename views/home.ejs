@@ -1,0 +1,260 @@
+
+
+<% layout('layouts/boilerplate') %> 
+    
+    <div class="relative container mx-auto py-6 text-4xl text-center">
+      <% -include('./partials/flash') %> 
+      <% if(currentUser){ %>
+        <main class="main-head" id="main">
+          <% if(user.gender === 'man'){ %>
+              <div class="male" id="male-container">
+                  <img class="img-icon" src="/img/icons8-user-male-30.png" alt="" />
+                  <div class="male-title">
+                    <p class="male-name"><%= user.username %></p>
+                    <small class="male-email"><%= user.email %> <span id="gen1"></span></small>
+                  </div>
+              </div>
+          <% } else{%>    
+              <div class="female" id="female-container">
+                  <img class="img-icon" src="/img/icons8-female-profile-50.png" alt="" />
+                  <div class="female-title">
+                    <p class="female-name"><%= user.username %></p>
+                    <small class="female-email"><%= user.email %><span id="gen2"></span></small>
+                  </div>
+              </div>
+          <% } %>    
+        </main>
+    <% } %>
+      <h1 class="my-4 block">Home Of Free Tips And Predictions.</h1>
+    </div>
+    <section class="main my-16">
+      <div class="grid grid-cols-1 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
+        <div
+          class=" mx-6 col-span-1 border shadow-md border-gray-400 rounded-2xl overflow-hidden transition duration-200 hover:shadow-lg hover:border-transparent"
+        >
+          <a href="/comingsoon" class="">
+            <img src="img/prapoth-panchuea-_lTF9zrF1PY-unsplash.jpg" alt="" />
+            <div class="px-4 pt-2 pb-0">
+              <h2
+                class="font-normal text-2xl transition duration-200 hover:underline"
+              >
+                Hot and Accurate Football Tips For Today!!
+              </h2>
+            </div>
+          </a>
+          <div class="px-4 py-4 pb-10">
+            <span
+              class="mb-6 pb-2 inline hover:underline focus:outline-none outline-none"
+              >Today's Special odds : 10.78</span
+            >
+            <p
+              class="mb-6 pb-2 hover:underline focus:outline-none outline-none"
+            >
+              Today's longshot : 1000
+            </p>
+          </div>
+        </div>
+        <div
+          class="mx-6 col-span-1 shadow-md border border-gray-400 rounded-2xl overflow-hidden transition duration-200 hover:shadow-lg hover:border-transparent"
+        >
+          <a href="/comingsoon">
+            <img
+              class="contain"
+              src="img/ryan-OywyPkrDEvg-unsplash.jpg"
+              alt=""
+            />
+            <div class="px-4 py-2 pb-0">
+              <h2
+                class="font-normal text-2xl transition duration-200 hover:underline"
+              >
+                Check Our NBA Tips And Player Stats Accumulator.
+              </h2>
+            </div>
+          </a>
+          <div class="px-4 py-4">
+            <span
+              class="mb-6 pb-2 inline hover:underline focus:outline-none outline-none"
+              >Today's Player Tips : 6.78</span
+            >
+            <p
+              class="mb-6 pb-2 hover:underline focus:outline-none outline-none"
+            >
+              Today's NBA acca : 7.78
+            </p>
+          </div>
+        </div>
+        <div
+          class="mx-6 col-span-1 border shadow-md border-gray-400 rounded-2xl overflow-hidden transition duration-200 hover:shadow-lg hover:border-transparent"
+        >
+          <a href="/comingsoon">
+            <img
+              class="contain"
+              src="img/moises-alex-WqI-PbYugn4-unsplash.jpg"
+              alt=""
+            />
+            <div class="px-4 py-2 pb-0">
+              <h2
+                class="font-normal text-2xl transition duration-200 hover:underline"
+              >
+                Tennis Tips, Grandslam Events and Weekly Rollover.
+              </h2>
+            </div>
+          </a>
+          <div class="px-4 py-4">
+            <span
+              class="mb-6 pb-2 inline hover:underline focus:outline-none outline-none"
+              >Today's Rollover acca : 6.78</span
+            >
+            <p
+              class="mb-6 pb-2 hover:underline focus:outline-none outline-none"
+            >
+              Today's Tennis Tips : 7.78
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 my-6">
+      <div class="container justify-center px-4 mx-auto">
+        <h1 class="text-center text-3xl py-4 font-bold">Today's Free Tips</h1>
+        <table
+          class="table-auto shadow-md transition duration-200 hover:shadow-2xl border mx-auto it border-gray-400 px-4 px-4 h-80 w-1/2"
+        >
+          <thead class="border border-gray-400 rounded-2xl">
+            <tr class="py-4">
+              <th class="py-4 px-2 pr-7 mx-auto">Teams</th>
+              <th class="flex justify-start py-6">Selection</th>
+              <th class="px-4 pr-6 text-center">Odds</th>
+            </tr>
+          </thead>
+          <tbody class="border border-gray-400 px-6">
+            <tr class="border border-gray-400">
+              <td class="px-4">Chelsea vs Fulham</td>
+              <td class="px-4">Home win</td>
+              <td class="px-4">1.69</td>
+            </tr>
+            <tr class="border border-gray-400">
+              <td class="px-4">Athletic Bibao vs Cadiz Fc</td>
+              <td class="px-4">Home win</td>
+              <td class="px-4">1.70</td>
+            </tr>
+            <tr>
+              <td class="px-4">Augsburg vs Bayer Leverkusen</td>
+              <td class="px-4">Over 2.5 match goals</td>
+              <td class="px-4">1.64</td>
+            </tr>
+            
+          </tbody>
+          
+        </table>
+        <div class="container my-2 flex justify-center">
+          <button
+                  class="border sub px-4 py-2 text-white hover:bg-blue-400 rounded-xl bg-blue-600"
+                >
+                  View more
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="secondrow my-4 mb-16">
+      <div class="container mx-auto py-6 text-2xl text-center">
+        <h1>
+          You can also subscribe to our paid plans and enjoy high probability
+          tips.
+        </h1>
+      </div>
+      <div class="grid grid-cols-1 gap-y-8  md:grid-cols-2 lg:grid-cols-2">
+        <div
+          class="mx-6 col-span-1 border shadow-md border-gray-400 rounded-2xl overflow-hidden transition duration-200 hover:shadow-lg hover:border-transparent"
+        >
+          <a href="/comingsoon">
+            <img
+              src="img/thomas-serer-r-xKieMqL34-unsplash.jpg"
+              class="bg-contain w-full contain"
+              alt=""
+            />
+            <div class="px-4 py-2 pb-4">
+              <h2
+                class="font-normal text-2xl transition duration-200 hover:underline"
+              >
+                Subscribe to our Basic plan.
+              </h2>
+              <div class="px-4 py-2">
+                <span
+                  class="mb-6 py-2 pb-2 inline cursor-text focus:outline-none outline-none"
+                  >Price : N5000</span
+                >
+                <p
+                  class="mb-3 py-1 pb-1 focus:outline-none cursor-text outline-none"
+                >
+                  Features : Daily 2odds , Rollover of 1.5 odds
+                </p>
+                <button
+                  class="border sub px-4 py-2 text-white hover:bg-blue-400 animate-pulse rounded-xl bg-blue-600"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="mx-6 col-span-1 shadow-md border border-gray-400 rounded-2xl overflow-hidden transition duration-200 hover:shadow-lg hover:border-transparent"
+        >
+          <a href="/comingsoon">
+            <img
+              src="img/keith-johnston-v_D1Cz99SR4-unsplash.jpg"
+              class="w-full overflow-hidden"
+              alt=""
+            />
+            <div class="px-4 py-2 pb-4">
+              <h2
+                class="font-normal text-2xl transition duration-200 hover:underline"
+              >
+                Subscribe to our Premium / VIP plans.
+              </h2>
+              <div class="px-4 py-2">
+                <span
+                  class="mb-6 py-2 pb-2 inline cursor-text focus:outline-none outline-none"
+                  >Price : N10000</span
+                >
+                <p
+                  class="mb-3 py-1 pb-1 focus:outline-none cursor-text outline-none"
+                >
+                  Features: Lifetime Access to all vip tips
+                </p>
+                <button
+                  class="border sub px-4 py-2 text-white hover:bg-blue-400 animate-pulse rounded-xl bg-blue-600"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <div class="text-center mx-auto py-5 sm:py-20 lg:py-14">
+        <h1 class="text-pri font-title font-bold text-3xl md:text-5xl">
+          Subscribe to our <br />
+          <span class="text-sec">Newsletter</span>
+        </h1>
+        <p class="text-pri text-sm mx-auto py-6">
+          Please subscribe to get regular updates and featured news through your
+          <br />email.
+        </p>
+        <form action="/subscribe" method="post">
+            <input
+              class="border bg-our-bg rounded-3xl shadow-inner focus:outline-none pr-16 pl-5 py-2"
+              type="email"
+              placeholder="Email address"
+              name="email"
+              id="email"
+              required
+            />
+            <button type="submit"
+            value="submit" class="px-3 ml-0 py-2 mt-4 sm:mt-0 sm:-ml-12 rounded-3xl bg-sec text-white bg-blue-800 focus:outline-none focus:ring-1 hover:bg-blue-600" >Submit</button>
+        </form>
+    </div>
+    
+    

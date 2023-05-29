@@ -1,0 +1,41 @@
+<section class="absolute top-2.5 right-3" id="main">
+    <% if(user.gender === 'man'){ %>
+        <div class="male" id="male-container">
+            <img src="icons8-user-male-30.png" alt="" />
+            <div class="male-title">
+              <p>Obinali Jerry</p>
+              <small>obinalijerry@gmail.com  <span id="gen1"></span></small>
+            </div>
+        </div>
+    <% } else{%>    
+        <div class="female" id="female-container">
+            <img src="icons8-female-profile-50.png" alt="" />
+            <div class="female-title">
+              <p>Obinali Jerry</p>
+              <small>obinalijerry@gmail.com  <span id="gen2"></span></small>
+            </div>
+        </div>
+    <% } %>    
+</section>
+
+<% if(currentUser){ %>
+    <section class="absolute top-2.5 right-3" id="main">
+      <% if(user.gender === 'man'){ %>
+          <div class="male" id="male-container">
+              <img src="icons8-user-male-30.png" alt="" />
+              <div class="male-title">
+                <p>Obinali Jerry</p>
+                <small>obinalijerry@gmail.com  <span id="gen1"></span></small>
+              </div>
+          </div>
+      <% } else{%>    
+          <div class="female" id="female-container">
+              <img src="icons8-female-profile-50.png" alt="" />
+              <div class="female-title">
+                <p>Obinali Jerry</p>
+                <small>obinalijerry@gmail.com  <span id="gen2"></span></small>
+              </div>
+          </div>
+      <% } %>    
+    </section>
+<% } %>
